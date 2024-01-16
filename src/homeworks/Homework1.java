@@ -6,7 +6,7 @@ public class Homework1 {
         mercedes = (1 + (3*(2-4))%3 + (11-7)*2)+(3-5)*3;
         volvo = mercedes*3 - 9%mercedes + 16-(-mercedes);
         opel = mercedes%volvo;
-        Необходимо вычислить значения mersedes, volvo и opel.(получилось)
+        Необходимо вычислить значения mersedes, volvo и opel.
 
         mercedes=3;
         volvo=28;
@@ -18,7 +18,7 @@ public class Homework1 {
         x+=-y*3 + ++x + --y;
         y+=(-x++)%3;
         int z = x + y;
-        Необходимо вычислить значения x, y и z.(не получилось)
+        Необходимо вычислить значения x, y и z.
         x=-7;
         y=9;
         z=2;
@@ -27,7 +27,7 @@ public class Homework1 {
         boolean a = (85/5 + (19-25%3))==(-3)*(-2+14/(-2))&&(2%7-1)*3<=2;
         boolean b = !a||a&&!a;
         boolean c = false&&!true||!((23%3+14)%3==7);
-        Необходимо вычислить значения a, b и c.(не получилось)
+        Необходимо вычислить значения a, b и c.
 
         a=false;
         b=true;
