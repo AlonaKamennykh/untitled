@@ -158,9 +158,8 @@ public class Homework4 {
             randomArray[i]= a.nextInt(-50,50);
         }
         System.out.println(Arrays.toString(randomArray));
-       /* int min=0;
-        int max=0;*/
-       /* for(int i = 0; i < randomArray.length; i++){
+
+       for(int i = 0; i < randomArray.length; i++){
             int min;
             for(int b = i + 1; b < randomArray.length; b++ ){
                 if(randomArray[i] > randomArray[b]){
@@ -175,17 +174,7 @@ public class Homework4 {
         System.out.println(Arrays.toString(randomArray));
         System.out.println("Max: "+randomArray[randomArray.length-1]);
         System.out.println("Min: "+randomArray[0]);
-*/
-      /* for (int i=0;i<randomArray.length;i++){
-            if (randomArray[i]<randomArray[i+1]) {
-                min=randomArray[i];
 
-                System.out.println("Min: "+min);
-            }else {
-                min=randomArray[i];
-            }
-        }
-        System.out.println("Max: "+max);
-        System.out.println("Min"+min);*/
+
     }
 }
