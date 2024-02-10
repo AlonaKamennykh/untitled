@@ -60,32 +60,35 @@ public class Homework4 {
         о невозможности приемки такого малого веса.Программа завершается, когда место на складе закончилось.
 */
 
-
-
 /*
         Scanner scanner = new Scanner(System.in);
-        int x=1;
+        int x = 1;
         System.out.println("Введите вес хранилища");
-            int a =scanner.nextInt();
+        int a = scanner.nextInt();
 
-        while (x>0){
+        while (x > 0) {
 
             Scanner scanner2 = new Scanner(System.in);
             System.out.println("Введите вес металла");
-            int b=scanner2.nextInt();
-            if (a>=b&&b>5){
-                int c=a-b;
-                a=c;
-                System.out.println("Осталось  "+a+"кг.");
 
-            }else if (a<b&&a==0) {
+            int b = scanner.nextInt();
+            if (a >= b && b > 5) {
+                int c = a - b;
+                a = c;
+                System.out.println("Осталось  " + a + "кг.");
+
+            } else if (a < b && a == 0) {
                 System.out.println("Места больше нет");
                 --x;
                 continue;
-            } else if (a<b){
+            } else if (a < b) {
                 System.out.println("Слишком большой вес.");
-            }else if (b==5){
+            } else if (b == 5) {
                 System.out.println("Слишком маленький вес.");
+            } else if (a < 5 && b <= 5) {
+                int c = a - b;
+                a = c;
+                System.out.println("Осталось  " + a + "кг.");
             }
 
 
