@@ -11,7 +11,8 @@ public class Homework6 {
         Необходимо создать одномерный массив, состоящий из максимальных значений
         каждого отдельного массива входящего в двумерный.
         Новый полученный массив вывести на экран.*/
-       /* Scanner scanner=new Scanner(System.in);
+
+      /* Scanner scanner=new Scanner(System.in);
         System.out.println("Введите количество строк");
         int line=scanner.nextInt();
 
@@ -38,8 +39,8 @@ public class Homework6 {
             }
             b[i] = max;
         }
-        System.out.println(Arrays.toString(b));
-*/
+        System.out.println(Arrays.toString(b));*/
+
 
        /* 2)Написати програму “стрільба по цілі”.
         Технічні вимоги:
@@ -66,11 +67,17 @@ public class Homework6 {
 [4, -, -, *,-, -]
 [5, -, *,-, -, *]*/
 
-        Scanner scanner=new Scanner(System.in);
+
+
+
+      Scanner scanner=new Scanner(System.in);
 
         Random c1=new Random();
-        char [][] a1=new char[5][5];
-        System.out.println(" All Set.Get ready to rumble !");
+        char[][] a1 = new char[5][5];
+
+
+
+       System.out.println(" All Set.Get ready to rumble !");
         a1[c1.nextInt(0,5)][c1.nextInt(0,5)]='$';
         System.out.println(Arrays.deepToString(a1));
 
@@ -78,9 +85,13 @@ public class Homework6 {
         while (n==0){
             System.out.println(" Enter the shooting line !");
             int line=scanner.nextInt();
+
             System.out.println(" Enter the shooting column !");
             int column=scanner.nextInt();
-            if (line<=5&&column<=5){
+            if (line>4||column>4){
+                System.out.println(" Enter the shooting line and column from 0 to 4 !");
+            }
+            if (line<=4&&column<=4){
                 if(a1[line][column]=='$'){
                     a1[line][column]='x';
                     System.out.println("You have won !");
@@ -97,5 +108,7 @@ public class Homework6 {
 
         }
         System.out.println(Arrays.deepToString(a1));
+
+        }
+
     }
-}
